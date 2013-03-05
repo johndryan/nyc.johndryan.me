@@ -9,16 +9,133 @@
 
 /* Table of Content
 ==================================================
-	#Site Styles
-	#Page Styles
+	#Layout Styles
+	#Element Styles
 	#Media Queries
 	#Font-Face */
 
-/* #Site Styles
+/* #Layout Styles
 ================================================== */
 
-/* #Page Styles
+body {
+	/* background: url(../images/grid-temp.png) repeat-y 50% top; */
+}
+
+hgroup,
+div#nyc {
+	padding-top: 12em;
+}
+
+div#nyc {
+	margin-top: 6px;
+}
+
+hgroup,
+h1 {
+	border-top: 3px solid #fff;
+}
+
+.hfeed {
+	padding-top: 16em;
+	background: url(../images/end-top.png) no-repeat 184px 0,
+		url(../images/end-bottom.png) no-repeat 184px bottom,
+		url(../images/tracks.png) repeat-y 190px 0;
+}
+
+.hentry {
+	padding-bottom: 4em
+}
+
+footer p {
+	border-top: 3px solid #fff;
+	color: #666;
+	margin-top: 4em;
+	padding-top: 1em;
+	text-align: right;
+	font-size: 10px;
+}
+
+header h4 {
+	margin-bottom: 1em;
+}
+
+header p,
+footer p {
+	font-size: 12px;
+	line-height: 20px;
+}
+
+/* #Element Styles
 ================================================== */
+
+time {
+	color: #666;
+	text-transform: capitalize;
+	font-weight: bold;
+	text-align: right;
+	white-space: nowrap;
+	font-size: 10px;
+	line-height: 24px
+}
+
+.tags h5 {
+	display: none;
+}
+
+.hentry h3 {
+	border-top: 3px solid #fff;
+	padding-top: 8px;
+}
+
+.hfeed .entry-summary {
+	overflow: hidden;
+	height: auto;
+}
+
+.entry-summary img {
+	margin: -6em 0;
+	transition: margin 0.5s linear;
+	-moz-transition: margin 0.5s linear;
+	-webkit-transition: margin 0.5s linear;
+	-o-transition: margin 0.5s linear;
+}
+
+.entry-summary:hover {
+	height: auto;
+}
+
+.entry-summary:hover img {
+	margin: 0;
+}
+
+.tags {
+	position: relative;
+}
+
+.tags li {
+	position: absolute;
+	background: url(../images/stop-circle.png) no-repeat 0 0;
+	width: 20px;
+	height: 20px;
+	overflow: hidden;
+	text-indent: -99em;
+}
+
+.tags li.unicef {
+	left: 78px;
+}
+
+.tags li.media {
+	left: 146px;
+}
+
+.tags li.writing {
+	left: 123px;
+}
+
+.tags li.inspiration {
+	left: 100px;
+}
 
 /* #Media Queries
 ================================================== */
